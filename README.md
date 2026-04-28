@@ -3,10 +3,10 @@ full stack, web-based, budget tracking application.
 visualizes spending habits and tracks transactions.
 
 # stack
-- React for frontend
-- Node.js and express for backend
-- SQL database
-- Prisma ORM
+- Frontend: React
+- Backend: Node and Express
+- Database: PostgreSQL
+- DB access: node-postgres (pg)
 
 # features
 - account login/registration with authentication
