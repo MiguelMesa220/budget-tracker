@@ -1,30 +1,23 @@
-
+import { useState } from "react";
+import TransactionList from "./components/TransactionList";
 import schnoz from './assets/schnoz.jpg'
 function App() {
+  const [transactions, setTransactions] = useState([
+    {id: 1, description: "coffee", amount: 4.5}, 
+    {id: 2, description: "groceries", amount: 25}, 
 
-  const handleClick = () => {
-        alert("button pushed");
-      };
+  ]);
 
-  return (
+  return(
     <main>
       <h1>Budget Tracker</h1>
-      <p>This is where the app will go</p>
-      <ol>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-      </ol>
 
-      <img
-      src={schnoz}
-      alt="schnoz"
+      <h2>Transactions</h2>
+      <TransactionList transactions = {transactions} />
 
-      />
-      
-      <button onClick={handleClick}>Click Me</button>
 
     </main>
+
   );
 }
 
