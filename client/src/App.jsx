@@ -1,3 +1,4 @@
+import TransactionItem from "./components/TransactionItem";
 import AddTransactionForm from "./components/AddTransactionForm";
 import { useState } from "react";
 import TransactionList from "./components/TransactionList";
