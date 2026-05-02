@@ -16,13 +16,19 @@ function App() {
 
   };
 
+  const deleteTransaction = (id) => {
+    setTransactions(transactions.filter((t)=>t.id !==id));
+  };
+  
   return(
     <main>
       <h1>Budget Tracker</h1>
       <AddTransactionForm addTransaction={addTransaction} />
       
       <h2>Transactions</h2>
-      <TransactionList transactions = {transactions} />
+      <TransactionList transactions = {transactions}
+      deleteTransaction={deleteTransaction}
+      />
       
 
     </main>

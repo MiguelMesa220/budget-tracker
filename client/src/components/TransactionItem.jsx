@@ -1,20 +1,12 @@
 function TransactionItem({transaction, deleteTransaction}){
-    return(
-
+    return (
     <li>
-    {transaction.description} - ${transaction.amount}
-    <button onClick={() => deleteTransaction(transaction.id)}>Delete
-            
-    </button>
+     {transaction.description} - ${transaction.amount}
+     <button onClick={() => deleteTransaction(transaction.id)}>
+     Delete
+     </button>
     </li>
-
-
-    );
-
-    
-
-
-    
+    );   
 }
 
 export default TransactionItem;
